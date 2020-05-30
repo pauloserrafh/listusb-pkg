@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 30 May 2020 19:34:10 -0300
+Source: listusb
+Binary: listusb
+Architecture: source amd64
+Version: 1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Paulo Serra Filho <pauloserrafh@unknown>
+Changed-By: Paulo Serra Filho <pauloserrafh@unknown>
+Description:
+ listusb    - <insert up to 60 chars description>
+Changes:
+ listusb (1.0-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ 2a4755344ff84b1a881357c86f961493f766fc56 805 listusb_1.0-1.dsc
+ abed2f34f0992991ed5c081bb4fa8bde1ebaf03d 860 listusb_1.0.orig.tar.gz
+ a624146a9b62f63c14047512fb36431dc600e4df 2208 listusb_1.0-1.debian.tar.xz
+ 386958139c825a43cb186dc1e4ab863ff9e72e1b 4438 listusb_1.0-1_amd64.deb
+Checksums-Sha256:
+ 9293d4fcfef370096eda1fee80e6997aeea5b121c31df4f9f0a73b69272c5d73 805 listusb_1.0-1.dsc
+ 8f014d00e4a95abb5a5470161c5b83f52e8b7f62822d4b90f165483ffa44638c 860 listusb_1.0.orig.tar.gz
+ 6726c37e8ab2ddb362b10edefcf4959f11bff8a795b5b8c85cf5f3a1a2b4832f 2208 listusb_1.0-1.debian.tar.xz
+ 9dee3eebadbfd8049ccb84dc32dd6cef400c3c8f15601647b1ad1f0e1dd48052 4438 listusb_1.0-1_amd64.deb
+Files:
+ f6493b74537c0b56cf7c4f65f054c484 805 unknown optional listusb_1.0-1.dsc
+ e5b545b5b18d825859d1b550f96a795d 860 unknown optional listusb_1.0.orig.tar.gz
+ ee0f41d7418160ff675493c1f15b251c 2208 unknown optional listusb_1.0-1.debian.tar.xz
+ ffa601e46ecfed9bb392e9c4a0296ba5 4438 unknown optional listusb_1.0-1_amd64.deb

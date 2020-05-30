@@ -1,0 +1,82 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: source package listusb
+dpkg-buildpackage: source version 1.0-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Paulo Serra Filho <pauloserrafh@unknown>
+ dpkg-source --before-build listusb-1.0
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+	make -j1 clean
+make[1]: Entering directory '/home/pauloserrafh/Documents/open-source/listusb-pkg/listusb-1.0'
+rm -Rf *.o listusb
+make[1]: Leaving directory '/home/pauloserrafh/Documents/open-source/listusb-pkg/listusb-1.0'
+   dh_clean
+ dpkg-source -b listusb-1.0
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building listusb using existing ./listusb_1.0.orig.tar.gz
+dpkg-source: info: building listusb in listusb_1.0-1.debian.tar.xz
+dpkg-source: info: building listusb in listusb_1.0-1.dsc
+ debian/rules build
+dh build 
+   dh_testdir
+   dh_update_autotools_config
+   dh_auto_configure
+   dh_auto_build
+	make -j1
+make[1]: Entering directory '/home/pauloserrafh/Documents/open-source/listusb-pkg/listusb-1.0'
+gcc listusb.c -o listusb `pkg-config libusb-1.0 --libs --cflags`
+make[1]: Leaving directory '/home/pauloserrafh/Documents/open-source/listusb-pkg/listusb-1.0'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary 
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/home/pauloserrafh/Documents/open-source/listusb-pkg/listusb-1.0'
+install -D -m 0755 listusb $(pwd)/debian/listusb/usr/bin/listusb
+make[1]: Leaving directory '/home/pauloserrafh/Documents/open-source/listusb-pkg/listusb-1.0'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'listusb' in '../listusb_1.0-1_amd64.deb'.
+ dpkg-genchanges  >../listusb_1.0-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build listusb-1.0
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+E: listusb changes: bad-distribution-in-changes-file unstable
+E: listusb changes: changed-by-address-malformed Paulo Serra Filho <pauloserrafh@unknown>
+E: listusb source: maintainer-address-malformed Paulo Serra Filho <pauloserrafh@unknown>
+W: listusb source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: listusb source: bad-homepage <insert the upstream URL, if relevant>
+W: listusb source: space-in-std-shortname-in-dep5-copyright <special license> (paragraph at line 5)
+W: listusb source: out-of-date-standards-version 3.9.6 (current is 3.9.7)
+W: listusb: wrong-bug-number-in-closes l3:#nnnn
+E: listusb: debian-changelog-file-contains-invalid-email-address pauloserrafh@unknown
+W: listusb: new-package-should-close-itp-bug
+E: listusb: changelog-is-dh_make-template
+E: listusb: helper-templates-in-copyright
+W: listusb: copyright-has-url-from-dh_make-boilerplate
+E: listusb: copyright-contains-dh_make-todo-boilerplate
+W: listusb: readme-debian-contains-debmake-template
+E: listusb: description-is-dh_make-template
+E: listusb: maintainer-address-malformed Paulo Serra Filho <pauloserrafh@unknown>
+E: listusb: section-is-dh_make-template
+W: listusb: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: listusb: bad-homepage <insert the upstream URL, if relevant>
+W: listusb: binary-without-manpage usr/bin/listusb
+Finished running lintian.

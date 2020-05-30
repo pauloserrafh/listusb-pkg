@@ -1,0 +1,5 @@
+listusb (1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Paulo Serra Filho <pauloserrafh@unknown>  Sat, 30 May 2020 19:34:10 -0300

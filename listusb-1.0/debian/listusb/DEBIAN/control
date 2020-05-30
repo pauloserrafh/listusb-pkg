@@ -1,0 +1,11 @@
+Package: listusb
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Paulo Serra Filho <pauloserrafh@unknown>
+Installed-Size: 22
+Depends: libc6 (>= 2.4), libusb-1.0-0 (>= 2:1.0.16)
+Section: unknown
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
