@@ -1,6 +1,6 @@
 # listusb-pkg
 
-Debian package for (listusb)[https://github.com/sergioprado/listusb]
+Debian package for [listusb](https://github.com/sergioprado/listusb)
 
 
 ## Install
@@ -67,9 +67,9 @@ See the references to learn how to publish on an ubuntu PPA.
 
 ## References
 Check some references to learn more about building Debian packages
-- (Debian PackagingIntro)[https://wiki.debian.org/Packaging/Intro]
-- (Debian Building Tutorial)[https://wiki.debian.org/BuildingTutorial]
-- (Using dh-make to prepare debian packages)[https://blog.packagecloud.io/eng/2015/07/14/using-dh-make-to-prepare-debian-packages/]
-- (Building debian packages with debuild)[https://blog.packagecloud.io/debian/debuild/packaging/2015/06/08/buildling-deb-packages-with-debuild/]
-- (HOWTO: Build debian packages for simple shell scripts)[https://blog.packagecloud.io/eng/2016/12/15/howto-build-debian-package-containing-simple-shell-scripts/]
-- (Building a Debian (`.deb`) source package, and publishing it on an Ubuntu PPA)[https://saveriomiroddi.github.io/Building-a-debian-deb-source-package-and-publishing-it-on-an-ubuntu-ppa/]
+- [Debian Packaging Intro](https://wiki.debian.org/Packaging/Intro)
+- [Debian Building Tutorial](https://wiki.debian.org/BuildingTutorial)
+- [Using dh-make to prepare debian packages](https://blog.packagecloud.io/eng/2015/07/14/using-dh-make-to-prepare-debian-packages/)
+- [Building debian packages with debuild](https://blog.packagecloud.io/debian/debuild/packaging/2015/06/08/buildling-deb-packages-with-debuild/)
+- [HOWTO: Build debian packages for simple shell scripts](https://blog.packagecloud.io/eng/2016/12/15/howto-build-debian-package-containing-simple-shell-scripts/)
+- [Building a Debian (`.deb`) source package, and publishing it on an Ubuntu PPA](https://saveriomiroddi.github.io/Building-a-debian-deb-source-package-and-publishing-it-on-an-ubuntu-ppa/)
